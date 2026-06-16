@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Z64_html</title>
+</head>
+<body>
+
+<h1>Zaokrąglanie narożników oraz centrowanie DIVów</h1>
+
+<h2>1) Tabela zaokrągleń narożników obszarów bloków (np. DIV)</h2>
+
+<table border="1" cellpadding="10">
+<tr>
+    <th>Zaokrąglenie narożnika</th>
+    <th>Selektor CSS</th>
+</tr>
+<tr>
+    <td>Górny lewy</td>
+    <td>border-top-left-radius: wartość;</td>
+</tr>
+<tr>
+    <td>Górny prawy</td>
+    <td>border-top-right-radius: wartość;</td>
+</tr>
+<tr>
+    <td>Dolny prawy</td>
+    <td>border-bottom-right-radius: wartość;</td>
+</tr>
+<tr>
+    <td>Dolny lewy</td>
+    <td>border-bottom-left-radius: wartość;</td>
+</tr>
+</table>
+
+<h2>2) Zastosowanie i uwagi dotyczące zaokrąglania narożników</h2>
+
+<p>
+Zaokrąglanie narożników stosuje się w celu poprawy estetyki elementów na stronie.  
+Można je stosować do dowolnych znaczników, takich jak:
+</p>
+
+<ul>
+    <li>p — akapit</li>
+    <li>h1 — nagłówek</li>
+    <li>div — blok</li>
+</ul>
+
+<p>
+Wartość zaokrąglenia może być podana w pikselach, centymetrach lub procentach.  
+Możliwe jest:
+</p>
+
+<ul>
+    <li>podanie jednej wartości — zaokrąglenie symetryczne,</li>
+    <li>podanie dwóch wartości — pierwsza określa promień poziomy, druga pionowy.</li>
+</ul>
+
+<p>
+Element nie musi mieć obramowania, aby zaokrąglenie było widoczne — wystarczy tło.  
+Należy jednak uważać, aby promień nie był zbyt duży, bo tekst może wyjść poza obszar.
+</p>
+
+<h2>3) Przykład z instrukcją</h2>
+
+<pre>
+div {
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+    border-top-right-radius: 20px;
+}
+</pre>
+
+<p>
+Powyższy kod tworzy prostokąt z zaokrąglonym prawym górnym narożnikiem.
+</p>
+
+<h2>4) Centrowanie DIVów</h2>
+
+<p>
+Aby wycentrować DIV poziomo, stosujemy:
+</p>
+
+<pre>
+div {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+</pre>
+
+<p>
+Warunek: DIV musi mieć ustawioną szerokość.  
+Wtedy przeglądarka automatycznie rozdziela wolne miejsce po bokach.
+</p>
+
+<p>
+Aby wycentrować DIV pionowo, stosuje się:
+</p>
+
+<pre>
+div {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+</pre>
+
+<p>
+lub nowocześnie:
+</p>
+
+<pre>
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+</pre>
+
+</body>
+</html>
+<!--  Ponomarenko Z64 -->

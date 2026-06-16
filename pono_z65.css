@@ -1,0 +1,45 @@
+body {
+    background-color: silver;
+}
+
+
+p {
+    font-size: 11pt;
+}
+
+p:first-child {
+    font-size: 7mm;
+    font-style: italic;
+}
+
+
+#pierwszy_ponomarenko {
+    width: calc(700px + 23 * 4px);
+    background-color: rgb(255, 192, 203); 
+    border: 7px solid purple;
+    border-radius: 13px 16px 8px 13px;
+    padding: 10px;
+}
+
+
+#drugi_ponomarenko {
+    width: calc(900px + 23 * 4px);
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(144, 238, 144); 
+    border: 3px solid black;
+    border-radius: 13px 16px 8px 13px;
+    padding: 10px;
+}
+
+
+#trzeci_ponomarenko {
+    width: calc(1100px + 23 * 4px);
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(173, 216, 230); 
+    border: 5px solid navy;
+    border-radius: 13px 16px 8px 13px;
+    padding: 10px;
+}
+/*  Ponomarenko Z65 */

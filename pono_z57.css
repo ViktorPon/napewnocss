@@ -1,14 +1,18 @@
 *{
-font: size 36pt;
+font-size: 36pt;
 color: red;
-background-color: silver;
+background-color:silver;
 }
-p.nieuniwersalna{
-font: size 36pt;
-color:green;
+
+p.nieuniwersalna
+{ 
+font-size: 31pt;
+color: green;   
+background-color: purple; 
+} 
+
+.uniwersalna
+{
+font-size: 27pt;
+color: green;
 }
-.ponomarenko_uniwersalna{
-font: size 29pt;
-color:green;    
-}
-/* <!--Ponomarenko_Z57> --> */
